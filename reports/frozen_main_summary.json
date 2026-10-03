@@ -1,0 +1,2383 @@
+{
+  "phase": "independent main",
+  "run_id": "20261002-182357",
+  "source_commit": "9e34d608c7a96a34c6ee7680878505fedc296bbc",
+  "selected_input_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "outputs": 11520,
+  "complete_keyset": true,
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "eligible_depths": [
+        0
+      ],
+      "primary": {
+        "E1": {
+          "difference": 0.004166666666666667,
+          "ci95": [
+            0.0,
+            0.020833333333333332
+          ],
+          "p_raw_centered": 0.802019798020198,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": false,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E1",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 0.802019798020198,
+          "inference_status": "approximate_empirical_bootstrap",
+          "equivalence_5pp": "inside_margin",
+          "p_holm_four": 1.0,
+          "reject_zero_at_05": false
+        },
+        "E2": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "p_raw_centered": 1.0,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": true,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E2",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 1.0,
+          "inference_status": "descriptive_only_degenerate_bootstrap",
+          "admissibility_before_after": [
+            0.9666666666666667,
+            0.9875
+          ],
+          "transitions_before_to_after": {
+            "invalid->invalid": 2,
+            "invalid->left": 6,
+            "left->invalid": 1,
+            "left->left": 231
+          },
+          "p_holm_four": 1.0,
+          "reject_zero_at_05": false
+        }
+      },
+      "preambleB_sensitivity": {
+        "E1": {
+          "difference": 0.0,
+          "ci95": [
+            -0.0125,
+            0.0125
+          ],
+          "p_raw_centered": 1.0,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": false,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E1",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 1.0,
+          "inference_status": "approximate_empirical_bootstrap",
+          "equivalence_5pp": "inside_margin"
+        },
+        "E2": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "p_raw_centered": 1.0,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": true,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E2",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 1.0,
+          "inference_status": "descriptive_only_degenerate_bootstrap",
+          "admissibility_before_after": [
+            0.9958333333333333,
+            0.9916666666666667
+          ],
+          "transitions_before_to_after": {
+            "invalid->left": 1,
+            "left->invalid": 2,
+            "left->left": 237
+          }
+        }
+      },
+      "cells_all_selected_depths": {
+        "0": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 236,
+            "latent_reference_match": 236,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 118,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 4,
+              "L4_latent": 236
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 237
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 232,
+            "latent_reference_match": 232,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 117,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 8,
+              "L4_latent": 232
+            },
+            "day_vector_correct": 232,
+            "other_slots_correct": 236
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 235,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L4_latent": 235
+            },
+            "day_vector_correct": 235,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 237,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 237,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 3,
+              "L3_licensed_alternate": 118,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 232,
+            "latent_reference_match": 117,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 232,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 8,
+              "L3_licensed_alternate": 115,
+              "L4_latent": 117
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 235,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L3_licensed_alternate": 116,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 119,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 238,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 240
+          }
+        ],
+        "1": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 237,
+            "latent_reference_match": 237,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 118,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 3,
+              "L4_latent": 237
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 238,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L3_licensed_alternate": 119,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 239,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L3_licensed_alternate": 120,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 239,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L3_licensed_alternate": 120,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 235,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L4_latent": 235
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 236
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 239
+          }
+        ]
+      },
+      "cells_confirmatory_depths": {
+        "0": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 236,
+            "latent_reference_match": 236,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 118,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 4,
+              "L4_latent": 236
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 237
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 232,
+            "latent_reference_match": 232,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 117,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 8,
+              "L4_latent": 232
+            },
+            "day_vector_correct": 232,
+            "other_slots_correct": 236
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 235,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L4_latent": 235
+            },
+            "day_vector_correct": 235,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 237,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 237,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 3,
+              "L3_licensed_alternate": 118,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 232,
+            "latent_reference_match": 117,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 232,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 8,
+              "L3_licensed_alternate": 115,
+              "L4_latent": 117
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 235,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L3_licensed_alternate": 116,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 119,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 238,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 240
+          }
+        ],
+        "1": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 237,
+            "latent_reference_match": 237,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 118,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 3,
+              "L4_latent": 237
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 238,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L3_licensed_alternate": 119,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 239,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L3_licensed_alternate": 120,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 119,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 239,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L3_licensed_alternate": 120,
+              "L4_latent": 119
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 240,
+            "latent_reference_match": 240,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 120,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L4_latent": 240
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 240
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 238
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 235,
+            "latent_reference_match": 235,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 115,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 5,
+              "L4_latent": 235
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 236
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 239,
+            "latent_reference_match": 239,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 119,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 1,
+              "L4_latent": 239
+            },
+            "day_vector_correct": 240,
+            "other_slots_correct": 239
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 238,
+            "latent_reference_match": 238,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 118,
+            "left": 120,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 2,
+              "L4_latent": 238
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 239
+          }
+        ]
+      },
+      "override_descriptive": {
+        "0": [
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.004166666666666667,
+            "L2_only_difference": 0.004166666666666667,
+            "day_vector_error_with_other_slots_correct_difference": 0.0,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.0,
+            "L2_only_difference": 0.0,
+            "day_vector_error_with_other_slots_correct_difference": -0.008333333333333333,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          }
+        ],
+        "1": [
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.0125,
+            "L2_only_difference": 0.0125,
+            "day_vector_error_with_other_slots_correct_difference": 0.0,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.0125,
+            "L2_only_difference": 0.0125,
+            "day_vector_error_with_other_slots_correct_difference": 0.004166666666666667,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "eligible_depths": [
+        0
+      ],
+      "primary": {
+        "E1": {
+          "difference": 0.0375,
+          "ci95": [
+            0.0,
+            0.07916666666666666
+          ],
+          "p_raw_centered": 0.07479252074792521,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": false,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E1",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 0.07479252074792521,
+          "inference_status": "approximate_empirical_bootstrap",
+          "equivalence_5pp": "inconclusive_or_outside_margin",
+          "p_holm_four": 0.29917008299170084,
+          "reject_zero_at_05": false
+        },
+        "E2": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "p_raw_centered": 1.0,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": true,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E2",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 1.0,
+          "inference_status": "descriptive_only_degenerate_bootstrap",
+          "admissibility_before_after": [
+            0.8666666666666667,
+            0.8
+          ],
+          "transitions_before_to_after": {
+            "invalid->invalid": 23,
+            "invalid->left": 9,
+            "left->invalid": 25,
+            "left->left": 183
+          },
+          "p_holm_four": 1.0,
+          "reject_zero_at_05": false
+        }
+      },
+      "preambleB_sensitivity": {
+        "E1": {
+          "difference": 0.08333333333333333,
+          "ci95": [
+            0.025,
+            0.15416666666666667
+          ],
+          "p_raw_centered": 0.014598540145985401,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": false,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E1",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 0.014598540145985401,
+          "inference_status": "approximate_empirical_bootstrap",
+          "equivalence_5pp": "inconclusive_or_outside_margin"
+        },
+        "E2": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "p_raw_centered": 1.0,
+          "templates": 24,
+          "pairs": 240,
+          "pairs_per_template": 10,
+          "fixed_depths": [
+            0
+          ],
+          "pairs_per_template_depth": 10,
+          "resamples": 10000,
+          "seed": 20261002,
+          "bootstrap_degenerate": true,
+          "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+          "eligible": true,
+          "endpoint": "E2",
+          "depths": [
+            0
+          ],
+          "p_for_holm": 1.0,
+          "inference_status": "descriptive_only_degenerate_bootstrap",
+          "admissibility_before_after": [
+            0.9083333333333333,
+            0.8875
+          ],
+          "transitions_before_to_after": {
+            "invalid->invalid": 17,
+            "invalid->left": 5,
+            "left->invalid": 10,
+            "left->left": 208
+          }
+        }
+      },
+      "cells_all_selected_depths": {
+        "0": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 165,
+            "latent_reference_match": 165,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 56,
+            "left": 109,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 75,
+              "L4_latent": 165
+            },
+            "day_vector_correct": 172,
+            "other_slots_correct": 200
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 157,
+            "latent_reference_match": 157,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 49,
+            "left": 108,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 83,
+              "L4_latent": 157
+            },
+            "day_vector_correct": 167,
+            "other_slots_correct": 216
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 177,
+            "latent_reference_match": 177,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 66,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 63,
+              "L4_latent": 177
+            },
+            "day_vector_correct": 185,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 192,
+            "latent_reference_match": 95,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 192,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 48,
+              "L3_licensed_alternate": 97,
+              "L4_latent": 95
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 208,
+            "latent_reference_match": 101,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 208,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 32,
+              "L3_licensed_alternate": 107,
+              "L4_latent": 101
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 224,
+            "latent_reference_match": 111,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 224,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 16,
+              "L3_licensed_alternate": 113,
+              "L4_latent": 111
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 222,
+            "latent_reference_match": 222,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 108,
+            "left": 114,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 18,
+              "L4_latent": 222
+            },
+            "day_vector_correct": 232,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 222,
+            "latent_reference_match": 222,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 110,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 18,
+              "L4_latent": 222
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 225,
+            "latent_reference_match": 225,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 113,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 15,
+              "L4_latent": 225
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 202,
+            "latent_reference_match": 202,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 91,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 38,
+              "L4_latent": 202
+            },
+            "day_vector_correct": 217,
+            "other_slots_correct": 218
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 221,
+            "latent_reference_match": 221,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 109,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 19,
+              "L4_latent": 221
+            },
+            "day_vector_correct": 233,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 216,
+            "latent_reference_match": 216,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 104,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 24,
+              "L4_latent": 216
+            },
+            "day_vector_correct": 229,
+            "other_slots_correct": 224
+          }
+        ],
+        "1": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 157,
+            "latent_reference_match": 157,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 44,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 83,
+              "L4_latent": 157
+            },
+            "day_vector_correct": 164,
+            "other_slots_correct": 205
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 150,
+            "latent_reference_match": 150,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 36,
+            "left": 114,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 90,
+              "L4_latent": 150
+            },
+            "day_vector_correct": 156,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 162,
+            "latent_reference_match": 162,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 49,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 78,
+              "L4_latent": 162
+            },
+            "day_vector_correct": 169,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 213,
+            "latent_reference_match": 104,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 213,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 27,
+              "L3_licensed_alternate": 109,
+              "L4_latent": 104
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 218,
+            "latent_reference_match": 108,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 218,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 22,
+              "L3_licensed_alternate": 110,
+              "L4_latent": 108
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 226,
+            "latent_reference_match": 111,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 226,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 14,
+              "L3_licensed_alternate": 115,
+              "L4_latent": 111
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 226,
+            "latent_reference_match": 226,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 111,
+            "left": 115,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 14,
+              "L4_latent": 226
+            },
+            "day_vector_correct": 235,
+            "other_slots_correct": 226
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 225,
+            "latent_reference_match": 225,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 112,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 15,
+              "L4_latent": 225
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 227,
+            "latent_reference_match": 227,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 114,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 13,
+              "L4_latent": 227
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 227
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 201,
+            "latent_reference_match": 201,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 90,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 39,
+              "L4_latent": 201
+            },
+            "day_vector_correct": 215,
+            "other_slots_correct": 223
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 224,
+            "latent_reference_match": 224,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 112,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 16,
+              "L4_latent": 224
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 207,
+            "latent_reference_match": 207,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 95,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 33,
+              "L4_latent": 207
+            },
+            "day_vector_correct": 220,
+            "other_slots_correct": 225
+          }
+        ]
+      },
+      "cells_confirmatory_depths": {
+        "0": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 165,
+            "latent_reference_match": 165,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 56,
+            "left": 109,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 75,
+              "L4_latent": 165
+            },
+            "day_vector_correct": 172,
+            "other_slots_correct": 200
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 157,
+            "latent_reference_match": 157,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 49,
+            "left": 108,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 83,
+              "L4_latent": 157
+            },
+            "day_vector_correct": 167,
+            "other_slots_correct": 216
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 177,
+            "latent_reference_match": 177,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 66,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 63,
+              "L4_latent": 177
+            },
+            "day_vector_correct": 185,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 192,
+            "latent_reference_match": 95,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 192,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 48,
+              "L3_licensed_alternate": 97,
+              "L4_latent": 95
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 208,
+            "latent_reference_match": 101,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 208,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 32,
+              "L3_licensed_alternate": 107,
+              "L4_latent": 101
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 224,
+            "latent_reference_match": 111,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 224,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 16,
+              "L3_licensed_alternate": 113,
+              "L4_latent": 111
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 222,
+            "latent_reference_match": 222,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 108,
+            "left": 114,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 18,
+              "L4_latent": 222
+            },
+            "day_vector_correct": 232,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 222,
+            "latent_reference_match": 222,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 110,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 18,
+              "L4_latent": 222
+            },
+            "day_vector_correct": 236,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 225,
+            "latent_reference_match": 225,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 113,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 15,
+              "L4_latent": 225
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 202,
+            "latent_reference_match": 202,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 91,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 38,
+              "L4_latent": 202
+            },
+            "day_vector_correct": 217,
+            "other_slots_correct": 218
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 221,
+            "latent_reference_match": 221,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 109,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 19,
+              "L4_latent": 221
+            },
+            "day_vector_correct": 233,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 216,
+            "latent_reference_match": 216,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 104,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 24,
+              "L4_latent": 216
+            },
+            "day_vector_correct": 229,
+            "other_slots_correct": 224
+          }
+        ],
+        "1": [
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 157,
+            "latent_reference_match": 157,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 44,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 83,
+              "L4_latent": 157
+            },
+            "day_vector_correct": 164,
+            "other_slots_correct": 205
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 150,
+            "latent_reference_match": 150,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 36,
+            "left": 114,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 90,
+              "L4_latent": 150
+            },
+            "day_vector_correct": 156,
+            "other_slots_correct": 221
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 162,
+            "latent_reference_match": 162,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 49,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 78,
+              "L4_latent": 162
+            },
+            "day_vector_correct": 169,
+            "other_slots_correct": 222
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 213,
+            "latent_reference_match": 104,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 213,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 27,
+              "L3_licensed_alternate": 109,
+              "L4_latent": 104
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 218,
+            "latent_reference_match": 108,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 218,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 22,
+              "L3_licensed_alternate": 110,
+              "L4_latent": 108
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "A",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 226,
+            "latent_reference_match": 111,
+            "latent_reference_interpretation": "not a correctness/error measure for ambiguous A-uncued",
+            "right": 0,
+            "left": 226,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 14,
+              "L3_licensed_alternate": 115,
+              "L4_latent": 111
+            },
+            "day_vector_correct": null,
+            "other_slots_correct": null
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 226,
+            "latent_reference_match": 226,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 111,
+            "left": 115,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 14,
+              "L4_latent": 226
+            },
+            "day_vector_correct": 235,
+            "other_slots_correct": 226
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 225,
+            "latent_reference_match": 225,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 112,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 15,
+              "L4_latent": 225
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "cued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 227,
+            "latent_reference_match": 227,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 114,
+            "left": 113,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 13,
+              "L4_latent": 227
+            },
+            "day_vector_correct": 239,
+            "other_slots_correct": 227
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "after",
+            "n": 240,
+            "admissible": 201,
+            "latent_reference_match": 201,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 90,
+            "left": 111,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 39,
+              "L4_latent": 201
+            },
+            "day_vector_correct": 215,
+            "other_slots_correct": 223
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "before",
+            "n": 240,
+            "admissible": 224,
+            "latent_reference_match": 224,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 112,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 16,
+              "L4_latent": 224
+            },
+            "day_vector_correct": 237,
+            "other_slots_correct": 225
+          },
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "filler": "none",
+            "n": 240,
+            "admissible": 207,
+            "latent_reference_match": 207,
+            "latent_reference_interpretation": "unique-state correctness",
+            "right": 95,
+            "left": 112,
+            "strict_json": 240,
+            "wrapped": 0,
+            "categories": {
+              "L2_outside_readings": 33,
+              "L4_latent": 207
+            },
+            "day_vector_correct": 220,
+            "other_slots_correct": 225
+          }
+        ]
+      },
+      "override_descriptive": {
+        "0": [
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.05416666666666667,
+            "L2_only_difference": 0.05416666666666667,
+            "day_vector_error_with_other_slots_correct_difference": 0.03333333333333333,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.05416666666666667,
+            "L2_only_difference": 0.05416666666666667,
+            "day_vector_error_with_other_slots_correct_difference": -0.0375,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          }
+        ],
+        "1": [
+          {
+            "item_type": "R",
+            "layout": "uncued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.020833333333333332,
+            "L2_only_difference": 0.020833333333333332,
+            "day_vector_error_with_other_slots_correct_difference": 0.016666666666666666,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          },
+          {
+            "item_type": "A",
+            "layout": "cued",
+            "pairs": 240,
+            "hypothesized_misleading_cue_minus_none": 0.016666666666666666,
+            "L2_only_difference": 0.016666666666666666,
+            "day_vector_error_with_other_slots_correct_difference": -0.05,
+            "scope": "descriptive; day-vector error is not proof of an internal attachment mechanism"
+          }
+        ]
+      }
+    }
+  ],
+  "primary_family_size": 4,
+  "analysis": "frozen centered hierarchical bootstrap10000/addone; Holm4; constant-bootstrap results descriptive only",
+  "human_annotation": "not_performed",
+  "ASR": "not_measured",
+  "statistical_scope": "controlled grammar,24surface frames maximum",
+  "common_depths": [
+    0
+  ],
+  "common_depth_sensitivity": [
+    {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "depths": [
+        0
+      ],
+      "E1": {
+        "difference": 0.004166666666666667,
+        "ci95": [
+          0.0,
+          0.020833333333333332
+        ],
+        "p_raw_centered": 0.802019798020198,
+        "templates": 24,
+        "pairs": 240,
+        "pairs_per_template": 10,
+        "fixed_depths": [
+          0
+        ],
+        "pairs_per_template_depth": 10,
+        "resamples": 10000,
+        "seed": 20261002,
+        "bootstrap_degenerate": false,
+        "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+        "eligible": true,
+        "endpoint": "E1",
+        "depths": [
+          0
+        ],
+        "p_for_holm": 0.802019798020198,
+        "inference_status": "approximate_empirical_bootstrap",
+        "equivalence_5pp": "inside_margin"
+      },
+      "E2": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_raw_centered": 1.0,
+        "templates": 24,
+        "pairs": 240,
+        "pairs_per_template": 10,
+        "fixed_depths": [
+          0
+        ],
+        "pairs_per_template_depth": 10,
+        "resamples": 10000,
+        "seed": 20261002,
+        "bootstrap_degenerate": true,
+        "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+        "eligible": true,
+        "endpoint": "E2",
+        "depths": [
+          0
+        ],
+        "p_for_holm": 1.0,
+        "inference_status": "descriptive_only_degenerate_bootstrap",
+        "admissibility_before_after": [
+          0.9666666666666667,
+          0.9875
+        ],
+        "transitions_before_to_after": {
+          "invalid->invalid": 2,
+          "invalid->left": 6,
+          "left->invalid": 1,
+          "left->left": 231
+        }
+      }
+    },
+    {
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "depths": [
+        0
+      ],
+      "E1": {
+        "difference": 0.0375,
+        "ci95": [
+          0.0,
+          0.07916666666666666
+        ],
+        "p_raw_centered": 0.07479252074792521,
+        "templates": 24,
+        "pairs": 240,
+        "pairs_per_template": 10,
+        "fixed_depths": [
+          0
+        ],
+        "pairs_per_template_depth": 10,
+        "resamples": 10000,
+        "seed": 20261002,
+        "bootstrap_degenerate": false,
+        "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+        "eligible": true,
+        "endpoint": "E1",
+        "depths": [
+          0
+        ],
+        "p_for_holm": 0.07479252074792521,
+        "inference_status": "approximate_empirical_bootstrap",
+        "equivalence_5pp": "inconclusive_or_outside_margin"
+      },
+      "E2": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_raw_centered": 1.0,
+        "templates": 24,
+        "pairs": 240,
+        "pairs_per_template": 10,
+        "fixed_depths": [
+          0
+        ],
+        "pairs_per_template_depth": 10,
+        "resamples": 10000,
+        "seed": 20261002,
+        "bootstrap_degenerate": true,
+        "uncertainty_scope": "declared surface frames and generated base assignments with fixed depth allocation; empirical hierarchical approximation",
+        "eligible": true,
+        "endpoint": "E2",
+        "depths": [
+          0
+        ],
+        "p_for_holm": 1.0,
+        "inference_status": "descriptive_only_degenerate_bootstrap",
+        "admissibility_before_after": [
+          0.8666666666666667,
+          0.8
+        ],
+        "transitions_before_to_after": {
+          "invalid->invalid": 23,
+          "invalid->left": 9,
+          "left->invalid": 25,
+          "left->left": 183
+        }
+      }
+    }
+  ]
+}

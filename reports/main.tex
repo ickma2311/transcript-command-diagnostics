@@ -1,0 +1,244 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,longtable,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\LTcapwidth}{\textwidth}
+\title{A Preregistered Test of Filled-Pause Placement\\in a Controlled Command Grammar}
+\author{Anonymous Authors}
+\date{Research note --- October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The preregistered hypothesis that moving a filled-pause token would steer temporal attachment was not supported in this controlled task-state generation experiment. On 240 generated base pairs (each an A- and an R-item), Qwen3-4B-Instruct-2507 and Phi-4-mini-instruct produced no following-command commitments on ambiguous, uncued (period- and newline-free) inputs, across two preambles and three filler conditions. All 2,701 grammar-admissible outputs in those conditions selected the preceding-command reading. The primary steering contrast is therefore descriptive only: its empirical bootstrap is degenerate, and greedy generation exposes only the chosen state. For separately constructed, uniquely recoverable inputs, the primary accuracy gap after jointly removing periods and newlines was 0.42 percentage points for Qwen and 3.75 for Phi. Their approximate 95\% intervals were [0,2.08] and [0,7.92] percentage points: Qwen's lay inside a prespecified five-point margin at ceiling, whereas Phi's did not establish that margin. The experiment uses explicit filler-ignore instructions and schema-constrained generation, so the null does not distinguish compliance from graded linguistic sensitivity. Exact reading sets, cross-checked by two locally written parsers against the declared grammar, distinguish outputs outside the command grammar from licensed alternatives that disagree with a constructed reference. We retain complete outputs, unsuccessful earlier versions and frozen analyses as a reproducible record of the negative and inconclusive results.
+\end{abstract}
+
+\section{Introduction}
+A text transformation can preserve the words of a command while removing information needed to recover its intended interpretation. A model output that differs from a stored reference can then reflect either a processing error or a different interpretation permitted by the resulting input. These possibilities matter when evaluating transcript-style text, where boundaries and filled-pause tokens can differ from edited prose. They also complicate the question of whether a filler or missing punctuation reduces execution quality.
+
+We study one controlled construction: a temporal phrase between two commands, written schematically as \texttt{VP1 on DAY VP2}. The day may modify the preceding command (\emph{left}) or the following command (\emph{right}) under our declared grammar. A period fixes the boundary in one condition. In another, an additional day phrase and the rule that each command takes at most one day preserve a unique interpretation even without punctuation. A single \texttt{uh} is placed before or after the junction phrase, without changing the licensed states.
+
+The preregistered primary questions were whether removing boundaries had a small effect on uniquely recoverable execution (E1), and whether filler position shifted commitment toward the following-command reading on ambiguous inputs (E2). E2 did not detect the anticipated steering: neither tested model produced a right commitment on any ambiguous uncued input. E1 yielded a small sample gap for Qwen and an inconclusive margin result for Phi. The original hierarchy is retained rather than replacing the steering endpoint with an observed validity difference.
+
+The record contributes an exact, input-relative accounting example and a completed held-out measurement under specified instructions and decoding. The account distinguishes a licensed alternative from an output outside every allowed reading, while keeping disagreement with constructed intent visible. The contribution is limited to whole-state accounting within an authored grammar. The remaining sections relate the design to earlier work, define its grammar and measurements, report primary and secondary results separately, and explain why the steering null is insufficient to establish insensitivity.
+
+\section{Related Work}
+\paragraph{Punctuation and underspecification.}
+Ek et al.\ \cite{ek-etal-2020-punctuation} distinguish punctuation edits that are irrelevant to an inference label from small changes that alter relevant meaning. Our matched controls instantiate a narrower question: whether a boundary-removal transform leaves one or multiple whole states within a declared command language. DUST studies identification and interpretation of semantic underspecification in pre-trained language models\ \cite{wildenburg-etal-2024-pre}. It provides a broader, naturalistic account of underspecification through separate tests of recognition and interpretation. The present reading sets are exhaustive for an authored grammar, with no corresponding claim about all natural-English interpretations.
+
+\paragraph{Ambiguity in interaction.}
+Zhang and Choi\ \cite{zhang-choi-2025-clarify} evaluate when clarification is useful through a framework spanning question answering, translation and inference. Su and Cardie\ \cite{su2026knowing} distinguish explicit ambiguity recognition from clarification behavior: a model can recognize ambiguity when asked yet answer directly in another setting. Ambig-DS pairs fully specified agent tasks with controlled ambiguous variants and examines decision-relevant silent commitments\ \cite{stoisser2026ambigds}. These studies motivate separately measuring ambiguity judgments, clarification behavior and task consequences. Our interface returns a single command state; the present measurements are grammar admissibility and agreement with the constructed reference.
+
+\paragraph{Filled pauses and garden paths.}
+Bailey and Ferreira\ \cite{Bailey_2003} manipulate interruption position in human auditory garden-path comprehension, including filled pauses and environmental sounds. Their work motivates a location-sensitive question but does not supply an acoustic explanation for a text-token manipulation. Amouyal et al.\ \cite{amouyal-etal-2025-lm} compare humans and language models on garden-path comprehension using controlled syntactic and semantic variations. Baitalik and Datta\ \cite{baitalik-datta-2026-garden} examine temporary garden-path recovery with architecture-specific surprisal and representation measures. Such temporary ambiguities eventually receive disambiguating material. Our A-uncued condition instead retains multiple final states under the grammar after the entire input has been read. We measure emitted command states, not incremental surprisal, processing time or internal representations.
+
+\paragraph{Output restrictions.}
+Tam et al.\ \cite{tam-etal-2024-speak} show that format restrictions can alter task performance. Consequently, a schema mask cannot be treated as a neutral way of observing unconstrained semantic competence. Our fixed family schemas constrain JSON shape, field domains and command types; they do not encode item-specific answers. Both the filler-ignore instruction and this constrained interface belong to the measured condition. The experiment supplies no matched contrast that identifies their separate causal contributions.
+
+\section{Command Language and Reading Sets}
+\subsection{A finite semantic contract}
+Each input describes two positive actions and one prohibition, in mention order. Shopping actions contain item, quantity, seller and nullable day fields; meeting tasks contain actor, verb, object and nullable day; file operations contain source, destination, copy verb and nullable day. Updates and self-corrections are absent in this final design. Identifiers are synthetic, weekdays come from a fixed seven-day vocabulary, and each positive command accepts at most one temporal modifier. A modifier is a prefix or suffix of one command; it cannot cross a period. Newlines are whitespace. Fillers are semantically ignored under this contract.
+
+Let $s$ denote a constructed reference state (the generator's latent state), $x$ its clean rendered input, and $T$ the transform that jointly removes periods and newlines. Insert filler condition $f$ into the clauses before choosing a layout, giving $x_f$; the visible input is $y\in\{x_f,T(x_f)\}$. The set $G(y)$ contains the whole states licensed by the grammar for visible input $y$. The generator creates $s$ before rendering and before model inference. Two parsers recover $G(y)$ separately: a regular-expression enumerator and an Earley grammar\ \cite{Earley_1970} implemented with Lark, with a separate state interpreter. Their agreement cross-checks the implementation against this declared contract. Both were authored locally; parser agreement is not independent human validation of English ambiguity.
+
+Consider an actual held-out shopping item:
+\begin{quote}\small\ttfamily
+order two trays from quinn on saturday.\\
+order six staples from ravi.\\
+you must not buy cushions.
+\end{quote}
+Its cued state places Saturday on the tray order. Removing both boundary marks yields:
+\begin{quote}\small\ttfamily
+order two trays from quinn on saturday\\
+order six staples from ravi you must not buy cushions
+\end{quote}
+The printed line wrap above is typographic; the uncued input contains spaces. The two licensed states place Saturday on either the tray order (left) or the staples order (right). A counterfactual clean rendering places the modifier at the start of the second command, after the period terminating the first command, and has the same transformed words. Thus $T$ is not invertible over these constructed clean renderings.
+
+\subsection{Ambiguous and recoverable pairs}
+A-items (ambiguous after boundary removal) have one temporal phrase. Cued A-items have one licensed state, whereas uncued A-items have two. R-items (recoverable after boundary removal) add a different day on the other action; the one-day-per-command rule then forces a unique state in both layouts. The construction balances which command receives the junction day. For left-directed R-items, the other day is a suffix of the second command; for right-directed R-items, it is a prefix of the first. This avoids an adjacent-day shortcut. The following uncued R examples illustrate each direction; both are actual test inputs:
+\begin{quote}\small\ttfamily
+Left: order two trays from quinn on saturday\\
+order six staples from ravi on sunday\\
+you must not buy cushions\par\smallskip
+Right: on friday order four bags from paula\\
+on thursday order eight ribbons from sonia\\
+you must not buy paper
+\end{quote}
+In the right example Friday fixes the first order; the one-day rule then assigns Thursday to the second order. Line wraps in these printed examples are typographic.
+
+Each item has six variants: cued or uncued layout, crossed with no filler, \texttt{uh} before the junction phrase, or \texttt{uh} after it. Before and after variants have equal filler counts and retain all content words. They differ only in filler location. The corresponding uncued junction fragments are \texttt{from quinn uh on saturday order six} (before) and \texttt{from quinn on saturday uh order six} (after). A counterfactual clean A-rendering places Saturday at the start of the second order:
+\begin{quote}\small\ttfamily
+order two trays from quinn.\\
+on saturday order six staples from ravi.\\
+you must not buy cushions.
+\end{quote} The period and newline manipulation is joint; separate punctuation and line-break effects are not identified.
+
+\subsection{State categories}
+A complete emitted state $\hat{s}$ is classified as an unparseable output (L0), a schema-invalid output (L1), outside every licensed reading (L2), a licensed alternative to the constructed reference (L3), or a match to the constructed reference (L4). Admissibility is $\mathbf{1}\{\hat{s}\in G(y)\}$. Reference agreement is $\mathbf{1}\{\hat{s}=s\}$. On unique-state inputs they coincide with whole-state correctness; on A-uncued inputs reference agreement is a provenance comparison, not a semantic-error score. An L3 output can be grammatically licensed while failing to recover constructed intent. A left or right commitment requires an admissible whole state that assigns the junction day to the first or second command, respectively. Unconditional commitment rates use all 240 outputs in a cell as the denominator, including inadmissible states as zero. A filler arm means one filler condition. L0=L1=0 in the completed main run; this reflects the constrained interface. No prediction statistics enter the metric denominators.
+
+\section{Frozen Design and Analysis}
+The development set has 36 base pairs and the test set 240. Each pair supplies an A- and an R-item. Test sampling spans three families and eight surface frames per family, with ten generated pairs per frame. These 24 authored frames express one temporal-attachment construction, rather than 24 independent linguistic phenomena. Development and test identifiers, items, template indices and generated assignments are disjoint; the declared grammar and quantity vocabulary are shared.
+
+Both pinned models, Qwen3-4B-Instruct-2507 and Phi-4-mini-instruct, run greedy fp16 generation, one model per T4. The interface fixes JSON schemas by family, not by answer. A per-request mask does not impose answer-specific array lengths, dates or identifiers. We call the primary preamble P1 and the opening-sentence sensitivity preamble P2, to distinguish them from A/R item types. Both explicitly instruct \texttt{Ignore filled pauses um and uh}. The implementation uses vLLM 0.11.2 and xgrammar 0.1.25, with fixed separators and no fallback. Raw text is preserved and checked by two format validators rather than canonicalized to rescue invalid responses.
+
+Before deployment, the protocol, main analysis, pool and selected cases were frozen. Calibration eligibility required primary clean cued/no-filler A+R correctness of at least 70\%, with infrastructure and admissibility guards. Both models passed (Table~\ref{tab:cal}). The sample-size rule used gates and throughput, not development cue contrasts or item-level outcomes. With $r_{\min}$ the slower calibrated outputs per second,
+\[N_0=\min\{240,\lfloor(3600/1.5)r_{\min}/24\rfloor\},\qquad N=24\lfloor N_0/24\rfloor.\]
+The denominator 24 is the number of outputs per pair per model across items, layouts, fillers and preambles; the second 24 in the block-rounding rule is the number of frames. The sizing constant $3600/1.5=2400$ seconds is prescribed by the frozen rule. Complete 24-frame blocks were required, with a stop if $N<160$. The observed throughput gave $N=240$, selecting the entire frozen pool without filtering test items. Six variants, two item types, two preambles and two models yield 11,520 held-out outputs. All expected identities were present, with no length-truncated outputs; actual model, input, package and code receipts agree with the frozen records.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrrrr}\toprule
+Model / preamble & Clean correct /72 & Shopping /24 & Meeting /24 & Files /24\\\midrule
+Qwen P1 &71&24&24&23\\
+Qwen P2 &72&24&24&24\\
+Phi P1 &64&18&24&22\\
+Phi P2 &64&18&24&22\\\bottomrule
+\end{tabular}
+\caption{Development calibration counts, distinct from independent test results. P1 determines model eligibility. Clean means pooled cued/no-filler A+R correctness, with a 70\% accuracy threshold, requiring at least 51 of 72 correct. All families remain in the main analysis.}\label{tab:cal}
+\end{table}
+
+E1 is paired R-cued minus R-uncued exact-state correctness without filler. Its prespecified practical region is $\pm5$ percentage points (pp). E2 is the paired difference in unconditional right commitment, before minus after filler, on A-uncued items; outputs outside $G(y)$ count as zero for this indicator. Both endpoints use all selected pairs. E2 is two-sided; its anticipated sign was positive, meaning more right commitments with \texttt{uh} before the junction phrase. E2 additionally requires at least 50\% pooled development admissibility and at least 50\% admissibility in each main arm, pooled over families; no family is excluded post hoc. Both models passed the E2 guards; the lowest primary arm was Phi after-filler, 192/240.
+
+The frozen procedure uses 10,000 empirical hierarchical resamples: templates, then generated bases in the single no-update setting (ten bases per frame), with seed 20261002. This nested resampling follows the general hierarchical-bootstrap approach\ \cite{saravanan2020hierarchical}; that reference does not establish coverage for this authored-frame design. Intervals use the 2.5th and 97.5th percentiles as approximate 95\% intervals. With observed contrast $\widehat\Delta$ and resampled contrasts $\Delta_b^*$, the two-sided centered, add-one value is
+\[\widehat p=\frac{1+\sum_{b=1}^{10000}\mathbf{1}\{|\Delta_b^*-\widehat\Delta|\geq|\widehat\Delta|-10^{-12}\}}{10001}.\]
+Four primary model--endpoint values receive the Holm adjustment\ \cite{holm1979}. Applying that adjustment to approximate p-values does not give an exact error-control guarantee. An ineligible or degenerate endpoint receives p=1. A degenerate empirical bootstrap is descriptive only. We label an interval strictly within the practical region as inside the $\pm5$pp margin, without an exact equivalence guarantee. Preamble P2 and all remaining diagnostics are secondary.
+
+\section{Results}
+\subsection{Primary endpoints}
+The intended E2 steering effect was not observed (Table~\ref{tab:primary}). Right commitments were zero in both primary filler arms for both models. Extending the descriptive count to both preambles and all filler arms gives 0/2,880 right commitments; every one of the 2,701 admissible A-uncued outputs chose left. All E2 paired differences are zero, so its bootstrap is degenerate. The result does not establish that filler position leaves preferences or validity unchanged.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrrrrr}\toprule
+Model & R-cued & R-uncued & E1 gap (pp) & Approx. 95\% interval (pp) & Holm p\\\midrule
+Qwen P1 &240/240&239/240&0.417&[0,2.083]&1.000\\
+Phi P1 &225/240&216/240&3.750&[0,7.917]&0.299\\\midrule
+\multicolumn{6}{l}{E2 right commitments: Qwen P1 0/240 before, 0/240 after;}\\
+\multicolumn{6}{l}{Phi P1 0/240 before, 0/240 after. Both descriptive-only and degenerate; Holm p=1 (assigned).}\\\bottomrule
+\end{tabular}
+\caption{Frozen primary outcomes. E1 intervals concern the authored-frame design and are empirical approximations. No primary zero-difference test rejects. The E2 zero interval is omitted because it provides no population-precision evidence.}\label{tab:primary}
+\end{table}
+
+Qwen's E1 gap is 0.417pp, with approximate interval [0,2.083]pp inside the prespecified region. Only one pair has a nonzero difference, making this a ceiling result with limited empirical variation. Phi's 3.750pp gap has interval [0,7.917]pp, which does not establish the five-point region. Its adjusted p-value is 0.299. Non-rejection of zero and an inconclusive practical-margin result do not imply equivalence.
+
+\subsection{Secondary descriptive accounting}
+Without filler, primary A-uncued reference agreement is 119/240 for Qwen and 111/240 for Phi. Admissibility is 235/240 and 224/240 respectively: the difference comprises 116 and 113 licensed alternatives, whereas only 5 and 16 outputs lie outside the reading sets. Treating all reference mismatches as semantic errors would merge these categories. Constructed references are balanced 120/120 between directions. Because every admissible A-uncued output chose left, reference agreement equals the number of left-reference cases answered admissibly: 119/120 for Qwen and 111/120 for Phi.
+
+Validity varies while right commitment remains zero. For Qwen P1, before/after admissibility is 232/240 versus 237/240; paired transitions include six invalid-to-left and one left-to-invalid. For Phi P1, the counts are 208/240 versus 192/240, with nine invalid-to-left and 25 left-to-invalid. These are secondary descriptive observations, not replacement steering endpoints. Their full transition matrices and all cell counts are retained.
+
+Phi's cued A-items show a direction-specific accuracy deficit. Under preamble P1, no-filler correctness is 111/120 for constructed left attachment and 66/120 for constructed right attachment; under P2 it is 113/120 and 49/120. In the files family, primary A-uncued after-filler admissibility is 33/80, below 50\%, although each preregistered main arm, pooled over families, passed the guard. These floors are disclosed without applying a new family exclusion rule. Qwen can emit right states on cued A-items: it gets 115/120 right-reference no-filler cases correct under P1 (118/120 after filler and 115/120 before). Qwen emits valid right states when cued, while its admissible uncued outputs remain left-only.
+
+Preamble P2 changes Phi's R-cued/R-uncued counts to 227/240 and 207/240: the secondary E1 gap is 8.333pp, with approximate interval [2.5,15.417]pp and unadjusted centered p=0.0146. Qwen P2 is 238/240 in both layouts, with approximate 95\% interval [-1.25,1.25]pp for its gap. The Phi sensitivity result is outside the primary Holm family and does not replace the primary conclusion.
+
+Outside-set diagnostics distinguish action-count mismatches, prohibition mismatches, day vectors outside all licensed readings, other action-field mismatches and source/destination swaps. Flags can overlap and are post-main descriptions. Mixed field errors do not identify an internal temporal-attachment mechanism. Complete machine-readable tables contain all 48 model/preamble/cell groups and 144 family groups. The appendix prints the complete cell counts; field flags are supplied separately as descriptive data. Full development descriptions were disclosed only after the main analysis was frozen and completed, and were not pooled with test outcomes.
+
+\section{Limitations and Interpretation}
+The steering null is uninformative about graded sensitivity for three concrete reasons. First, the instruction tells models to ignore the manipulated filler, so a null is compatible with compliance. Second, admissible choices are entirely left-directed, putting the right indicator at floor. Third, greedy generation exposes changes in the top selected state; smaller preference shifts remain invisible because no graded probabilities were recorded.
+
+The semantic contract contains one attachment construction, synthetic identifiers and three task families. Its exact reading sets are grammar-relative. Natural English can license interpretations excluded by the contract, including other temporal scopes. Human ambiguity and naturalness judgments, real ASR, speech audio and acoustic timing were not measured. Jointly removing period and newline does not attribute effects separately to either feature, and one \texttt{uh} does not represent the range of colloquial speech or self-repair.
+
+Two specified small instruction models and a constrained single-state interface define the model scope. The opening-sentence sensitivity condition does not establish robustness to arbitrary paraphrases. Formatting success is not unconstrained task competence, while an admissible alternate reading is not proof of original-intent recovery. Phi's right-directed cued deficits (66/120 under P1 and 49/120 under P2) and family-specific validity floors further limit the informativeness of its steering test. The approximate hierarchical bootstrap describes variation among authored frames and generated assignments; it does not certify exact population coverage or general language invariance.
+
+\section{Conclusion}
+The preregistered filler-position steering hypothesis was unsupported in this finite command-language test. Both models selected only the preceding-command reading whenever an ambiguous uncued output was admissible. The recoverable-case boundary contrast was small at ceiling for Qwen and inconclusive for Phi. Reading-set accounting preserves the distinction between licensed alternatives, outside-set states and agreement with constructed intent. The accompanying local materials retain the complete measurements and unsuccessful versions, supplying an auditable negative E2 and mixed E1 record.
+
+\section*{Reproducibility and Data Statement}
+The accompanying local reproducibility directory contains frozen code, authored synthetic inputs, raw states, receipts, metrics and hashes; its README lists the complete cell, family and development tables. Public readers do not yet have a hosted download. CPU reconstruction reproduces the primary results; model inference requires the documented Kaggle environment and was not rerun during packaging. Code and original synthetic data have distinct MIT and CC-BY-4.0 terms. No borrowed benchmark examples, private recordings or model weights are included in this final command-language dataset. The model revisions and completed-run source are recorded in Appendix~\ref{app:implementation}. Public release and submission have not occurred.
+
+\begin{thebibliography}{12}
+\bibitem{ek-etal-2020-punctuation} Adam Ek, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis. 2020. How does Punctuation Affect Neural Models in Natural Language Inference. In \emph{Proceedings of the Probability and Meaning Conference}, pp. 109--116. \url{https://aclanthology.org/2020.pam-1.15/}.
+\bibitem{wildenburg-etal-2024-pre} Frank Wildenburg, Michael Hanna, and Sandro Pezzelle. 2024. Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? Ask the DUST! In \emph{Findings of ACL 2024}, pp. 9598--9613. \url{https://aclanthology.org/2024.findings-acl.572/}.
+\bibitem{zhang-choi-2025-clarify} Michael JQ Zhang and Eunsol Choi. 2025. Clarify When Necessary: Resolving Ambiguity Through Interaction with LMs. In \emph{Findings of NAACL 2025}, pp. 5541--5558. \url{https://aclanthology.org/2025.findings-naacl.306/}.
+\bibitem{su2026knowing} Jinyan Su and Claire Cardie. 2026. Knowing but Not Showing: LLMs Recognize Ambiguity but Rarely Ask Clarifying Questions. \emph{arXiv preprint arXiv:2605.25284}. \url{https://arxiv.org/abs/2605.25284}.
+\bibitem{stoisser2026ambigds} Josefa Lia Stoisser, Marc Boubnovski Martell, Sidsel Boldsen, Kaspar M{\"a}rtens, and Robert Kitchen. 2026. Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents. \emph{arXiv preprint arXiv:2605.09698}. \url{https://arxiv.org/abs/2605.09698}.
+\bibitem{Bailey_2003} Karl G. D. Bailey and Fernanda Ferreira. 2003. Disfluencies affect the parsing of garden-path sentences. \emph{Journal of Memory and Language}, 49(2):183--200. \url{https://doi.org/10.1016/S0749-596X(03)00027-5}.
+\bibitem{amouyal-etal-2025-lm} Samuel Joseph Amouyal, Aya Meltzer-Asscher, and Jonathan Berant. 2025. When the LM misunderstood the human chuckled: Analyzing garden path effects in humans and language models. In \emph{ACL 2025, Volume 1: Long Papers}, pp. 8235--8253. \url{https://aclanthology.org/2025.acl-long.403/}.
+\bibitem{baitalik-datta-2026-garden} Sanjan Baitalik and Rajashik Datta. 2026. Garden Path Recovery in Causal and Masked Language Models. In \emph{ACL 2026, Volume 4: Student Research Workshop}, pp. 383--392. \url{https://aclanthology.org/2026.acl-srw.32.pdf}.
+\bibitem{tam-etal-2024-speak} Zhi Rui Tam, Cheng-Kuang Wu, Yi-Lin Tsai, Chieh-Yen Lin, Hung-yi Lee, and Yun-Nung Chen. 2024. Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models. In \emph{EMNLP 2024: Industry Track}, pp. 1218--1236. \url{https://aclanthology.org/2024.emnlp-industry.91/}.
+\bibitem{Earley_1970} Jay Earley. 1970. An efficient context-free parsing algorithm. \emph{Communications of the ACM}, 13(2):94--102. \url{https://doi.org/10.1145/362007.362035}.
+\bibitem{holm1979} Sture Holm. 1979. A Simple Sequentially Rejective Multiple Test Procedure. \emph{Scandinavian Journal of Statistics}, 6(2):65--70. \url{https://www.jstor.org/stable/4615733}.
+\bibitem{saravanan2020hierarchical} Varun Saravanan, Gordon J. Berman, and Samuel J. Sober. 2020. Application of the hierarchical bootstrap to multi-level data in neuroscience. \emph{Neurons, Behavior, Data Analysis, and Theory}, 3(5):1--25. \href{https://nbdt.scholasticahq.com/article/13927-application-of-the-hierarchical-bootstrap-to-multi-level-data-in-neuroscience}{NBDT article 13927}.
+\end{thebibliography}
+
+\clearpage\appendix
+\section{Implementation and Version History}\label{app:implementation}
+The completed main run is \texttt{20261002-182357}. Its source commit and model revisions are:
+\begin{quote}\small\ttfamily
+Source: 9e34d608c7a96a34c6ee7680878505fedc296bbc\\
+Qwen: cdbee75f17c01a7cc42f958dc650907174af0554\\
+Phi: cfbefacb99257ffa30c83adab238a50856ac3083
+\end{quote}
+The main input SHA-256 equals the pre-calibration pool hash:
+\begin{quote}\footnotesize\ttfamily
+e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda
+\end{quote}
+
+Pinned implementation sources identify the model cards and library releases: Qwen\footnote{\href{https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md}{Qwen model card at the recorded revision}}, Phi\footnote{\href{https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md}{Phi model card at the recorded revision}}, vLLM\footnote{\url{https://github.com/vllm-project/vllm/tree/v0.11.2}}, xgrammar\footnote{\url{https://github.com/mlc-ai/xgrammar/tree/v0.1.25}} and Lark\footnote{\url{https://github.com/lark-parser/lark/tree/1.2.2}}.
+
+Each model runs on one Tesla T4. Runtime versions are vLLM 0.11.2, torch 2.9.0, transformers 4.57.6, jsonschema 4.23.0, Lark 1.2.2 and xgrammar 0.1.25. Context length is 2048 and output cap 512 tokens, batch size 64, seed 20261002, eager execution and fp16. Both engine and request set the xgrammar backend with fallback disabled and \texttt{disable\_any\_whitespace=True}. In this pinned version, the setting permits fixed single spaces after structural commas and colons; it is not whitespace-free JSON. Independent lexer and reference-format checks require the raw fixed separators and reject arbitrary whitespace or disagreement. No output is rewritten before scoring.
+
+Earlier attempts are separate records, not pooled baselines (Table~\ref{tab:versions}). Version 2's pilot failed its clean-range gates. Version 3's unconstrained/update design failed calibration; updates were then removed from the final no-update grammar. Version 4 terminated on a constrained whitespace-length failure before its output keyset was complete. The version 4.1 operational amendment enabled \texttt{disable\_any\_whitespace=True} at engine and request levels, added raw fixed-separator validation and engine-log attestation, and retained the prospective scientific contract. These records do not provide a matched causal estimate of improvement from a decoder change.
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{llllr}\toprule
+Version & Run & Source prefix & Outcome & Outputs\\\midrule
+2 pilot &20261002-121656&a3cd1de5&clean gates failed&2016\\
+3 calibration &20261002-165403&a77306d8&capability/schema gates failed&2016\\
+4 calibration &20261002-173143&80afc69c&infrastructure abort, partial&192\\
+4.1 calibration &20261002-180023&e6f79cd0&complete, eligible&1728\\
+4.1 main &20261002-182357&9e34d608&complete, E2 unsupported&11520\\\bottomrule
+\end{tabular}
+\caption{Attempt ledger. Output counts have different designs and denominators; they are not summed or used as model-quality comparisons. No main was run for versions 2--4.}\label{tab:versions}
+\end{table}
+
+\section{Complete Cell Counts}
+Each main cell below contains 240 outputs. The columns report whole-state admissibility (Adm), constructed-reference match (Ref), right/left commitments (R/L), and outside-set count (L2). On A-uncued inputs Ref is not correctness; on unique-state cells it is exact-state correctness. Right/left counts include only whole states in the reading set, not merely a matching day field. All main outputs pass the parse/schema format checks; constraints enforce those checks, not semantic correctness. P1 and P2 in this note correspond to raw prompt ids 0 and 1. The accompanying local reproducibility README identifies the complete family and development files.
+
+\begin{longtable}{lllrrrrrrrrrr}
+\caption{Primary preamble P1 cell counts; each model-cell n=240.}\\
+\toprule
+Item&Layout&Filler&\multicolumn{5}{c}{Qwen}&\multicolumn{5}{c}{Phi}\\
+&&&Adm&Ref&R&L&L2&Adm&Ref&R&L&L2\\\midrule\endfirsthead
+\toprule Item&Layout&Filler&Adm&Ref&R&L&L2&Adm&Ref&R&L&L2\\\midrule\endhead
+A&cued&after&236&236&118&118&4&165&165&56&109&75\\
+A&cued&before&232&232&115&117&8&157&157&49&108&83\\
+A&cued&none&235&235&115&120&5&177&177&66&111&63\\
+A&uncued&after&237&119&0&237&3&192&95&0&192&48\\
+A&uncued&before&232&117&0&232&8&208&101&0&208&32\\
+A&uncued&none&235&119&0&235&5&224&111&0&224&16\\
+R&cued&after&240&240&120&120&0&222&222&108&114&18\\
+R&cued&before&239&239&120&119&1&222&222&110&112&18\\
+R&cued&none&240&240&120&120&0&225&225&113&112&15\\
+R&uncued&after&238&238&118&120&2&202&202&91&111&38\\
+R&uncued&before&240&240&120&120&0&221&221&109&112&19\\
+R&uncued&none&239&239&119&120&1&216&216&104&112&24\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{lllrrrrrrrrrr}
+\caption{Secondary preamble P2 cell counts; each model-cell n=240.}\\
+\toprule
+Item&Layout&Filler&\multicolumn{5}{c}{Qwen}&\multicolumn{5}{c}{Phi}\\
+&&&Adm&Ref&R&L&L2&Adm&Ref&R&L&L2\\\midrule\endfirsthead
+\toprule Item&Layout&Filler&Adm&Ref&R&L&L2&Adm&Ref&R&L&L2\\\midrule\endhead
+A&cued&after&239&239&119&120&1&157&157&44&113&83\\
+A&cued&before&237&237&119&118&3&150&150&36&114&90\\
+A&cued&none&240&240&120&120&0&162&162&49&113&78\\
+A&uncued&after&238&119&0&238&2&213&104&0&213&27\\
+A&uncued&before&239&119&0&239&1&218&108&0&218&22\\
+A&uncued&none&239&119&0&239&1&226&111&0&226&14\\
+R&cued&after&240&240&120&120&0&226&226&111&115&14\\
+R&cued&before&239&239&119&120&1&225&225&112&113&15\\
+R&cued&none&238&238&118&120&2&227&227&114&113&13\\
+R&uncued&after&235&235&115&120&5&201&201&90&111&39\\
+R&uncued&before&239&239&119&120&1&224&224&112&112&16\\
+R&uncued&none&238&238&118&120&2&207&207&95&112&33\\
+\bottomrule
+\end{longtable}
+
+\end{document}

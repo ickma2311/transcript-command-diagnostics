@@ -1,0 +1,64 @@
+{
+  "version": "0.1.0",
+  "url": "https://github.com/ickma2311/transcript-command-diagnostics/releases/download/v0.1.0/transcript-command-diagnostics-v0.1.0-data.tar.gz",
+  "archive_name": "transcript-command-diagnostics-v0.1.0-data.tar.gz",
+  "archive_bytes": 1683050,
+  "archive_sha256": "4a8f7c10a54a74121a97243c92f7fc5eef2c131facbecf78e704debbc3121d02",
+  "files": [
+    {
+      "path": "pivot/inputs/calibration.jsonl",
+      "bytes": 472038,
+      "sha256": "4927ddc380648779a276e6f4750be3a34a008464e075c7927ca42c2242b6927b"
+    },
+    {
+      "path": "pivot/inputs/development.jsonl",
+      "bytes": 472038,
+      "sha256": "4927ddc380648779a276e6f4750be3a34a008464e075c7927ca42c2242b6927b"
+    },
+    {
+      "path": "pivot/inputs/development_items.jsonl",
+      "bytes": 81834,
+      "sha256": "d79afaa66ee1baf30144bc2023d293bb088d46a2457e1f8ed883fda11b00d05c"
+    },
+    {
+      "path": "pivot/inputs/main.jsonl",
+      "bytes": 3092784,
+      "sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda"
+    },
+    {
+      "path": "pivot/inputs/test.jsonl",
+      "bytes": 3092784,
+      "sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda"
+    },
+    {
+      "path": "pivot/inputs/test_items.jsonl",
+      "bytes": 540352,
+      "sha256": "8d11573bac7ec64f370fe11ce10a3a1f1fd51cde1cc19c3ecc87ee0e96da6d56"
+    },
+    {
+      "path": "pivot/kaggle_outputs/20261002-182357/out/Phi-4-mini-instruct-1.jsonl",
+      "bytes": 14571216,
+      "sha256": "cef1a1b7bdbfaf1cbf69237b7d72c8ee4dca5e5c553d6094542ae834749c7f72"
+    },
+    {
+      "path": "pivot/kaggle_outputs/20261002-182357/out/Qwen3-4B-Instruct-2507-0.jsonl",
+      "bytes": 14809801,
+      "sha256": "df0bffe58cfcacfc0fe6306417c4568371c265fbb2ed8cd949fe66416a026b1b"
+    },
+    {
+      "path": "pivot/kaggle_outputs/20261002-182357/out/experiment_receipt.json",
+      "bytes": 7064,
+      "sha256": "5aa19e7813042606cec80c503e98dc8c73614365a4915b326b7f44350a15c345"
+    },
+    {
+      "path": "results/main/scored.jsonl",
+      "bytes": 7822306,
+      "sha256": "98bd4e9bf8a6bbffa7b6cfa95e93da28fb14b9f3c966f2c8275fb8b6c8bd5f4e"
+    },
+    {
+      "path": "results/main/summary.json",
+      "bytes": 74933,
+      "sha256": "9ff50de2e448f8fc653f49d47fe826d75356a1fee142d327f6e4da361b47a57e"
+    }
+  ]
+}

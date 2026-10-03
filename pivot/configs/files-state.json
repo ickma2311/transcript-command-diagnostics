@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verb": {
+            "const": "copy"
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "destination": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "day": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "verb",
+          "source",
+          "destination",
+          "day"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "prohibited": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verb": {
+            "const": "change"
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          }
+        },
+        "required": [
+          "verb",
+          "object"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "operations",
+    "prohibited"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

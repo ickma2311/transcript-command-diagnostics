@@ -1,0 +1,27 @@
+name: CPU reproducibility
+on:
+  release:
+    types: [published]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.14'
+      - run: python -m pip install -r requirements-cpu.txt
+      - run: python tools/fetch_artifacts.py
+      - run: python tools/validate_dataset.py
+      - run: python -m unittest discover -s tests -v
+      - name: Reconstruct and compare complete main results
+        shell: bash
+        run: |
+          REPRO_OUTPUT="${RUNNER_TEMP}/main-replay"
+          python tools/reproduce_main.py --output "$REPRO_OUTPUT"
+          python tools/verify_reproduction.py --output "$REPRO_OUTPUT"

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license": "apache-2.0",
+    "gated": false,
+    "pipeline_tag": "text-generation"
+  },
+  {
+    "id": "microsoft/Phi-4-mini-instruct",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "license": "mit",
+    "gated": false,
+    "pipeline_tag": "text-generation"
+  }
+]

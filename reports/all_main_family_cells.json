@@ -1,0 +1,2428 @@
+{
+  "scope": "post-main descriptive; not new primary tests; A-uncued latent-reference mismatch is not unique-state correctness",
+  "rows": [
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 77,
+      "latent_reference_match": 77,
+      "right": 39,
+      "left": 38,
+      "category_counts": {
+        "L4_latent": 77,
+        "L2_outside_readings": 3
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 73,
+      "latent_reference_match": 73,
+      "right": 36,
+      "left": 37,
+      "category_counts": {
+        "L4_latent": 73,
+        "L2_outside_readings": 7
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 77,
+      "latent_reference_match": 77,
+      "right": 37,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 77,
+        "L2_outside_readings": 3
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 40,
+      "left": 39,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L2_outside_readings": 1,
+        "L4_latent": 79
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 77,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 77,
+      "category_counts": {
+        "L3_licensed_alternate": 38,
+        "L4_latent": 39,
+        "L2_outside_readings": 3
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 73,
+      "latent_reference_match": 38,
+      "right": 0,
+      "left": 73,
+      "category_counts": {
+        "L3_licensed_alternate": 35,
+        "L4_latent": 38,
+        "L2_outside_readings": 7
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 75,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 75,
+      "category_counts": {
+        "L3_licensed_alternate": 36,
+        "L2_outside_readings": 5,
+        "L4_latent": 39
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 77,
+      "latent_reference_match": 77,
+      "right": 39,
+      "left": 38,
+      "category_counts": {
+        "L2_outside_readings": 3,
+        "L4_latent": 77
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L4_latent": 39,
+        "L3_licensed_alternate": 40,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 75,
+      "latent_reference_match": 75,
+      "right": 35,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 75,
+        "L2_outside_readings": 5
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 41,
+      "latent_reference_match": 41,
+      "right": 12,
+      "left": 29,
+      "category_counts": {
+        "L2_outside_readings": 39,
+        "L4_latent": 41
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 42,
+      "latent_reference_match": 42,
+      "right": 14,
+      "left": 28,
+      "category_counts": {
+        "L4_latent": 42,
+        "L2_outside_readings": 38
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 53,
+      "latent_reference_match": 53,
+      "right": 22,
+      "left": 31,
+      "category_counts": {
+        "L4_latent": 53,
+        "L2_outside_readings": 27
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 33,
+      "latent_reference_match": 15,
+      "right": 0,
+      "left": 33,
+      "category_counts": {
+        "L3_licensed_alternate": 18,
+        "L2_outside_readings": 47,
+        "L4_latent": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 49,
+      "latent_reference_match": 22,
+      "right": 0,
+      "left": 49,
+      "category_counts": {
+        "L3_licensed_alternate": 27,
+        "L2_outside_readings": 31,
+        "L4_latent": 22
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 31,
+      "right": 0,
+      "left": 65,
+      "category_counts": {
+        "L3_licensed_alternate": 34,
+        "L4_latent": 31,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 64,
+      "latent_reference_match": 64,
+      "right": 30,
+      "left": 34,
+      "category_counts": {
+        "L4_latent": 64,
+        "L2_outside_readings": 16
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 33,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 65,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 67,
+      "latent_reference_match": 67,
+      "right": 35,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 67,
+        "L2_outside_readings": 13
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 62,
+      "latent_reference_match": 62,
+      "right": 30,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 62,
+        "L2_outside_readings": 18
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 64,
+      "latent_reference_match": 64,
+      "right": 32,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 64,
+        "L2_outside_readings": 16
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 66,
+      "latent_reference_match": 66,
+      "right": 34,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 66,
+        "L2_outside_readings": 14
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 63,
+      "latent_reference_match": 63,
+      "right": 23,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 63,
+        "L2_outside_readings": 17
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 25,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 65,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 68,
+      "latent_reference_match": 68,
+      "right": 28,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 68,
+        "L2_outside_readings": 12
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 26,
+      "left": 39,
+      "category_counts": {
+        "L4_latent": 65,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 72,
+      "latent_reference_match": 72,
+      "right": 32,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 72,
+        "L2_outside_readings": 8
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 61,
+      "latent_reference_match": 61,
+      "right": 21,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 61,
+        "L2_outside_readings": 19
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 50,
+      "latent_reference_match": 50,
+      "right": 10,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 50,
+        "L2_outside_readings": 30
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 56,
+      "latent_reference_match": 56,
+      "right": 16,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 56,
+        "L2_outside_readings": 24
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 75,
+      "latent_reference_match": 75,
+      "right": 35,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 75,
+        "L2_outside_readings": 5
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 0,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 42,
+      "latent_reference_match": 42,
+      "right": 9,
+      "left": 33,
+      "category_counts": {
+        "L2_outside_readings": 38,
+        "L4_latent": 42
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 43,
+      "latent_reference_match": 43,
+      "right": 9,
+      "left": 34,
+      "category_counts": {
+        "L4_latent": 43,
+        "L2_outside_readings": 37
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 47,
+      "latent_reference_match": 47,
+      "right": 14,
+      "left": 33,
+      "category_counts": {
+        "L4_latent": 47,
+        "L2_outside_readings": 33
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 53,
+      "latent_reference_match": 24,
+      "right": 0,
+      "left": 53,
+      "category_counts": {
+        "L3_licensed_alternate": 29,
+        "L2_outside_readings": 27,
+        "L4_latent": 24
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 58,
+      "latent_reference_match": 28,
+      "right": 0,
+      "left": 58,
+      "category_counts": {
+        "L4_latent": 28,
+        "L2_outside_readings": 22,
+        "L3_licensed_alternate": 30
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 67,
+      "latent_reference_match": 32,
+      "right": 0,
+      "left": 67,
+      "category_counts": {
+        "L3_licensed_alternate": 35,
+        "L4_latent": 32,
+        "L2_outside_readings": 13
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 68,
+      "latent_reference_match": 68,
+      "right": 33,
+      "left": 35,
+      "category_counts": {
+        "L4_latent": 68,
+        "L2_outside_readings": 12
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 67,
+      "latent_reference_match": 67,
+      "right": 34,
+      "left": 33,
+      "category_counts": {
+        "L2_outside_readings": 13,
+        "L4_latent": 67
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 69,
+      "latent_reference_match": 69,
+      "right": 36,
+      "left": 33,
+      "category_counts": {
+        "L4_latent": 69,
+        "L2_outside_readings": 11
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 64,
+      "latent_reference_match": 64,
+      "right": 32,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 64,
+        "L2_outside_readings": 16
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 33,
+      "left": 32,
+      "category_counts": {
+        "L2_outside_readings": 15,
+        "L4_latent": 65
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "files",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 33,
+      "left": 32,
+      "category_counts": {
+        "L4_latent": 65,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 61,
+      "latent_reference_match": 61,
+      "right": 21,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 61,
+        "L2_outside_readings": 19
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 62,
+      "latent_reference_match": 62,
+      "right": 22,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 62,
+        "L2_outside_readings": 18
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 64,
+      "latent_reference_match": 64,
+      "right": 24,
+      "left": 40,
+      "category_counts": {
+        "L2_outside_readings": 16,
+        "L4_latent": 64
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 39,
+      "right": 0,
+      "left": 79,
+      "category_counts": {
+        "L3_licensed_alternate": 40,
+        "L4_latent": 39,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 78,
+      "latent_reference_match": 78,
+      "right": 38,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 78,
+        "L2_outside_readings": 2
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 63,
+      "latent_reference_match": 63,
+      "right": 24,
+      "left": 39,
+      "category_counts": {
+        "L4_latent": 63,
+        "L2_outside_readings": 17
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 79,
+      "latent_reference_match": 79,
+      "right": 39,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 79,
+        "L2_outside_readings": 1
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "meeting",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 65,
+      "latent_reference_match": 65,
+      "right": 25,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 65,
+        "L2_outside_readings": 15
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 54,
+      "latent_reference_match": 54,
+      "right": 14,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 54,
+        "L2_outside_readings": 26
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 45,
+      "latent_reference_match": 45,
+      "right": 5,
+      "left": 40,
+      "category_counts": {
+        "L2_outside_readings": 35,
+        "L4_latent": 45
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 51,
+      "latent_reference_match": 51,
+      "right": 11,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 51,
+        "L2_outside_readings": 29
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "A",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 40,
+      "right": 0,
+      "left": 80,
+      "category_counts": {
+        "L4_latent": 40,
+        "L3_licensed_alternate": 40
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "cued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "after",
+      "n": 80,
+      "admissible": 74,
+      "latent_reference_match": 74,
+      "right": 34,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 74,
+        "L2_outside_readings": 6
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "before",
+      "n": 80,
+      "admissible": 80,
+      "latent_reference_match": 80,
+      "right": 40,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 80
+      }
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "prompt": 1,
+      "family": "shopping",
+      "item_type": "R",
+      "layout": "uncued",
+      "filler": "none",
+      "n": 80,
+      "admissible": 77,
+      "latent_reference_match": 77,
+      "right": 37,
+      "left": 40,
+      "category_counts": {
+        "L4_latent": 77,
+        "L2_outside_readings": 3
+      }
+    }
+  ]
+}

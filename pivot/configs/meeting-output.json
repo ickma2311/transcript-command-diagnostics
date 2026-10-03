@@ -1,0 +1,85 @@
+{
+  "type": "object",
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "actor": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "verb": {
+            "enum": [
+              "pack",
+              "label",
+              "ship",
+              "check"
+            ],
+            "type": "string"
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "day": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "actor",
+          "verb",
+          "object",
+          "day"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "prohibited": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verb": {
+            "const": "email"
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          }
+        },
+        "required": [
+          "verb",
+          "object"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "tasks",
+    "prohibited"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,13 @@
+{
+  "validated_on": "2026-10-02",
+  "cpu_only": true,
+  "main_output_identities": 11520,
+  "byte_identical_summary_sha256": "9ff50de2e448f8fc653f49d47fe826d75356a1fee142d327f6e4da361b47a57e",
+  "byte_identical_scored_sha256": "98bd4e9bf8a6bbffa7b6cfa95e93da28fb14b9f3c966f2c8275fb8b6c8bd5f4e",
+  "reading_sets_checked": 3312,
+  "generated_test_pool_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "unit_tests": 4,
+  "unit_tests_passed": 4,
+  "demo_is_constructed": true,
+  "verification_scope": "Calculation and declared grammar; not independent model inference replication or general ASR validity"
+}

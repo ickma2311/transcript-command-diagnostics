@@ -1,0 +1,39 @@
+{
+  "export_scope": "Selected scientific fields of the original internal Git freeze; not independent external preregistration or a signed timestamp",
+  "original_freeze_sha256": "a749a26b9bcfb4ed4ad34f96487dca29040e54de41248b647b783991f99185ca",
+  "created_at_utc": "2026-10-03T01:20:57.441266+00:00",
+  "version": "4.1",
+  "phase": "main",
+  "main_selected_pairs": 240,
+  "main_input_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "code_hashes": {
+    "analyze_calibration.py": "38c57dfdd43d0c42342a88b820bcb280595ec829cecd75676af4ec6eccca52f3",
+    "build.py": "1bf56ede8f80570bdb38f20c532add8be6ebc6ba6e63bde69033e7c928f957ba",
+    "check.py": "6ec89683e6c03160947502fc6c29350439600828624cb319fb3ecb55c1970c21",
+    "compact_contract.py": "f8b1e39020c1f183863033cc6d837d8d3e089679dbfc0b008cf7d447a92d52b6",
+    "configs/files-state.json": "d7217e8a64d555326dac9a9cefe3501c644cb961d9b8f1a6c74ccef8e722a6b0",
+    "configs/meeting-state.json": "eebbc8b5aa1484f50b3ef6dcd2992bb1cdf476fa0b7348b57b7be7075eab6ac6",
+    "configs/models.json": "6ce3eaa077bf9ecac1dce599253a49c7e705afcd4313e60eb603fa4a4bd274f0",
+    "configs/shopping-state.json": "eba01d9176e999db7f96778f68233d00057111936adf13cfb075497d0bef7ef3",
+    "earley_parser.py": "07b911b51c3ad1d4ec1daebafcb410e4c16040874d169fa2d3cfbc47707dd8d1",
+    "main.py": "8a189635c22b79d80f2cddffd1c7b8fbc47bfdae79d902324360395d45e508b7",
+    "regex_parser.py": "c02580e69be43ec8e5c9fcae19300ced9d22be57e7c287d679222a278cc15348",
+    "requirements.txt": "c4a8736f875bdfc9f18e7312f0acd44321e88d394978671c203ae0ddc29711f5",
+    "runner.py": "1a1644eca30a1108ab2df2ad2d2c144d2ad018a20d3bbe67a47ccecfc228ec59",
+    "scoring.py": "2479d3e90b0f233369bfc0aa68ac70914b8f5c10dd351908ab81fda6f0c246a4",
+    "worker.py": "111a0fb3b8a211d0e983fd2cea3b13cc8decb8e5ec25c1b45963ec65a02c7745"
+  },
+  "analysis_hashes": {
+    "analysis/analyze_main.py": "f7422e3d353032fa6b38cb68db44b5da64fc6c45c4dfc50a1b47a11e4039a39f",
+    "analysis/inference_stats.py": "438bbe11a4a7fcd560dd58520daed407823bf5ae278acfb11f073ae3560d9f4e",
+    "analysis/select_main.py": "c3d579d1f5d632211faad4dda518ef3f4b0ddd6e6e21edbb2b3237b6f35177c3"
+  },
+  "selection_sha256": "af99c7ea1803179d19933016045da22f1e7863d8b26ee5cd1de312121e0841de",
+  "pre_calibration_pool_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "calibration_source_commit": "e6f79cd0287051adb217b00227d2ee99bd84b4d8",
+  "calibration_run_id": "20261002-180023",
+  "dev_cue_effects_used": false,
+  "dev_cue_effects_disclosed": false,
+  "test_model_outputs_exist": false,
+  "model_gate_and_throughput_only": true
+}

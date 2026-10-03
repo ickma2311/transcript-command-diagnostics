@@ -1,0 +1,4 @@
+# NEW packaging requirements; CPU scoring only. No vLLM/torch/models.
+numpy==2.1.3
+jsonschema==4.23.0
+lark==1.2.2

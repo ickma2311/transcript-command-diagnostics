@@ -1,0 +1,44 @@
+{
+  "permitted": true,
+  "depths": [
+    0
+  ],
+  "pairs_per_replicate_block": 24,
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_pairs": 240,
+  "eligible_depths_by_model": {
+    "Qwen/Qwen3-4B-Instruct-2507": [
+      0
+    ],
+    "microsoft/Phi-4-mini-instruct": [
+      0
+    ]
+  },
+  "e2_calibration_entry_by_model": {
+    "Qwen/Qwen3-4B-Instruct-2507": true,
+    "microsoft/Phi-4-mini-instruct": true
+  },
+  "calibration_source_commit": "e6f79cd0287051adb217b00227d2ee99bd84b4d8",
+  "calibration_run_id": "20261002-180023",
+  "n_rule_unrounded": 240,
+  "steady_outputs_per_s": 5.656590510355703,
+  "frozen_pool_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "selected_input_sha256": "e2d5f827d4d21728ac60aca3b4c9c833e4ea31e9d1bae1bf4aee86b4ef570bda",
+  "selected_rows": 2880,
+  "expected_outputs": 11520,
+  "main_ready": false,
+  "readiness_scope": "selected only; analysis review/freeze, source tag and live resource gates still required",
+  "dev_effect_sizes_used": false,
+  "test_model_outputs_read": false
+}

@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "properties": {
+    "purchases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "seller": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          },
+          "day": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "item",
+          "quantity",
+          "seller",
+          "day"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "prohibited": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verb": {
+            "const": "buy"
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z]+$"
+          }
+        },
+        "required": [
+          "verb",
+          "object"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "purchases",
+    "prohibited"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

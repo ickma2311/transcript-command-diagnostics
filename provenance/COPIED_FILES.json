@@ -1,0 +1,109 @@
+{
+  "source_commit": "9e34d608c7a96a34c6ee7680878505fedc296bbc",
+  "source_scope": "original frozen main code; technical note and release helpers were completed after main analysis",
+  "copied_unchanged": {
+    "pivot/scoring.py": {
+      "original_sha256": "2479d3e90b0f233369bfc0aa68ac70914b8f5c10dd351908ab81fda6f0c246a4",
+      "release_sha256": "2479d3e90b0f233369bfc0aa68ac70914b8f5c10dd351908ab81fda6f0c246a4"
+    },
+    "pivot/compact_contract.py": {
+      "original_sha256": "f8b1e39020c1f183863033cc6d837d8d3e089679dbfc0b008cf7d447a92d52b6",
+      "release_sha256": "f8b1e39020c1f183863033cc6d837d8d3e089679dbfc0b008cf7d447a92d52b6"
+    },
+    "pivot/regex_parser.py": {
+      "original_sha256": "c02580e69be43ec8e5c9fcae19300ced9d22be57e7c287d679222a278cc15348",
+      "release_sha256": "c02580e69be43ec8e5c9fcae19300ced9d22be57e7c287d679222a278cc15348"
+    },
+    "pivot/earley_parser.py": {
+      "original_sha256": "07b911b51c3ad1d4ec1daebafcb410e4c16040874d169fa2d3cfbc47707dd8d1",
+      "release_sha256": "07b911b51c3ad1d4ec1daebafcb410e4c16040874d169fa2d3cfbc47707dd8d1"
+    },
+    "pivot/build.py": {
+      "original_sha256": "1bf56ede8f80570bdb38f20c532add8be6ebc6ba6e63bde69033e7c928f957ba",
+      "release_sha256": "1bf56ede8f80570bdb38f20c532add8be6ebc6ba6e63bde69033e7c928f957ba"
+    },
+    "pivot/configs/files-state.json": {
+      "original_sha256": "d7217e8a64d555326dac9a9cefe3501c644cb961d9b8f1a6c74ccef8e722a6b0",
+      "release_sha256": "d7217e8a64d555326dac9a9cefe3501c644cb961d9b8f1a6c74ccef8e722a6b0"
+    },
+    "pivot/configs/files-output.json": {
+      "original_sha256": "d7217e8a64d555326dac9a9cefe3501c644cb961d9b8f1a6c74ccef8e722a6b0",
+      "release_sha256": "d7217e8a64d555326dac9a9cefe3501c644cb961d9b8f1a6c74ccef8e722a6b0"
+    },
+    "pivot/configs/shopping-state.json": {
+      "original_sha256": "eba01d9176e999db7f96778f68233d00057111936adf13cfb075497d0bef7ef3",
+      "release_sha256": "eba01d9176e999db7f96778f68233d00057111936adf13cfb075497d0bef7ef3"
+    },
+    "pivot/configs/models.json": {
+      "original_sha256": "6ce3eaa077bf9ecac1dce599253a49c7e705afcd4313e60eb603fa4a4bd274f0",
+      "release_sha256": "6ce3eaa077bf9ecac1dce599253a49c7e705afcd4313e60eb603fa4a4bd274f0"
+    },
+    "pivot/configs/meeting-state.json": {
+      "original_sha256": "eebbc8b5aa1484f50b3ef6dcd2992bb1cdf476fa0b7348b57b7be7075eab6ac6",
+      "release_sha256": "eebbc8b5aa1484f50b3ef6dcd2992bb1cdf476fa0b7348b57b7be7075eab6ac6"
+    },
+    "pivot/configs/meeting-output.json": {
+      "original_sha256": "eebbc8b5aa1484f50b3ef6dcd2992bb1cdf476fa0b7348b57b7be7075eab6ac6",
+      "release_sha256": "eebbc8b5aa1484f50b3ef6dcd2992bb1cdf476fa0b7348b57b7be7075eab6ac6"
+    },
+    "pivot/configs/shopping-output.json": {
+      "original_sha256": "eba01d9176e999db7f96778f68233d00057111936adf13cfb075497d0bef7ef3",
+      "release_sha256": "eba01d9176e999db7f96778f68233d00057111936adf13cfb075497d0bef7ef3"
+    },
+    "analysis/analyze_main.py": {
+      "original_sha256": "f7422e3d353032fa6b38cb68db44b5da64fc6c45c4dfc50a1b47a11e4039a39f",
+      "release_sha256": "f7422e3d353032fa6b38cb68db44b5da64fc6c45c4dfc50a1b47a11e4039a39f"
+    },
+    "analysis/inference_stats.py": {
+      "original_sha256": "438bbe11a4a7fcd560dd58520daed407823bf5ae278acfb11f073ae3560d9f4e",
+      "release_sha256": "438bbe11a4a7fcd560dd58520daed407823bf5ae278acfb11f073ae3560d9f4e"
+    },
+    "analysis/main_selection.json": {
+      "original_sha256": "af99c7ea1803179d19933016045da22f1e7863d8b26ee5cd1de312121e0841de",
+      "release_sha256": "af99c7ea1803179d19933016045da22f1e7863d8b26ee5cd1de312121e0841de"
+    },
+    "tools/reproduce_main.py": {
+      "original_sha256": "a5c608656590fdd60483f2394c4093e311e64ec3073e7442afae67199b8cb405",
+      "release_sha256": "a5c608656590fdd60483f2394c4093e311e64ec3073e7442afae67199b8cb405"
+    },
+    "tools/verify_reproduction.py": {
+      "original_sha256": "9de58f86b91e08ec4ecef67b9b7b083fc098c15168d1fbe1831624ce1ba4f857",
+      "release_sha256": "9de58f86b91e08ec4ecef67b9b7b083fc098c15168d1fbe1831624ce1ba4f857"
+    },
+    "reports/main.tex": {
+      "original_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3",
+      "release_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3"
+    },
+    "reports/main.pdf": {
+      "original_sha256": "196bc390fa47ef55ee1eee9dfaae9ba2b94f9b09ea36a03a645ea12c500d4254",
+      "release_sha256": "196bc390fa47ef55ee1eee9dfaae9ba2b94f9b09ea36a03a645ea12c500d4254"
+    },
+    "reports/references.bib": {
+      "original_sha256": "60387f65adc4b8d2db961689c91ffcfb2fef52038cd922c376ae8642c4adafe7",
+      "release_sha256": "60387f65adc4b8d2db961689c91ffcfb2fef52038cd922c376ae8642c4adafe7"
+    },
+    "reports/all_main_cells.csv": {
+      "original_sha256": "3cb604de57e5a0e84d3664a35bbd2b1a52cdc216259c54bf522ca88725d47b17",
+      "release_sha256": "3cb604de57e5a0e84d3664a35bbd2b1a52cdc216259c54bf522ca88725d47b17"
+    },
+    "reports/all_main_family_cells.json": {
+      "original_sha256": "b8ba20ad241975c15cd4f69bfb82362b52f3486b8c6a866758a9242b4232e5db",
+      "release_sha256": "b8ba20ad241975c15cd4f69bfb82362b52f3486b8c6a866758a9242b4232e5db"
+    },
+    "reports/error_and_direction_diagnostics.json": {
+      "original_sha256": "1cc28e581207fcae78d12226cb4aee37d07bbbcc7e0c0173115ace4102d1453c",
+      "release_sha256": "1cc28e581207fcae78d12226cb4aee37d07bbbcc7e0c0173115ace4102d1453c"
+    },
+    "reports/frozen_main_summary.json": {
+      "original_sha256": "9ff50de2e448f8fc653f49d47fe826d75356a1fee142d327f6e4da361b47a57e",
+      "release_sha256": "9ff50de2e448f8fc653f49d47fe826d75356a1fee142d327f6e4da361b47a57e"
+    }
+  },
+  "modified_for_release": {
+    "requirements-cpu.txt": {
+      "original_sha256": "ad4e777ae067ce2bf8be8023304ac1020e9ee54d29b172923e3adbb65eeae2a7",
+      "release_sha256": "e30b88ed3403b4cde80d0804789da909e79359f021bdd5b7569220f9f8b8a108",
+      "change": "Add pinned Lark1.2.2 for grammar validation; original scoring/statistics pins unchanged"
+    }
+  }
+}
