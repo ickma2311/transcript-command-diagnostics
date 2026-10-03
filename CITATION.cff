@@ -2,9 +2,10 @@ cff-version: 1.2.0
 message: "Please cite this diagnostic dataset, code and technical report when using them."
 title: "Transcript Command Diagnostics: a bounded filled-pause and boundary-removal diagnostic"
 authors:
-  - name: "Transcript Command Diagnostics contributors"
-version: 0.1.0
-date-released: 2026-10-02
+  - family-names: "Ma"
+    given-names: "Chao"
+version: 0.1.1
+date-released: 2026-10-03
 url: "https://github.com/ickma2311/transcript-command-diagnostics"
 repository-code: "https://github.com/ickma2311/transcript-command-diagnostics"
 license: MIT

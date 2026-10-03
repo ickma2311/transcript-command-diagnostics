@@ -70,14 +70,6 @@
       "original_sha256": "9de58f86b91e08ec4ecef67b9b7b083fc098c15168d1fbe1831624ce1ba4f857",
       "release_sha256": "9de58f86b91e08ec4ecef67b9b7b083fc098c15168d1fbe1831624ce1ba4f857"
     },
-    "reports/main.tex": {
-      "original_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3",
-      "release_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3"
-    },
-    "reports/main.pdf": {
-      "original_sha256": "196bc390fa47ef55ee1eee9dfaae9ba2b94f9b09ea36a03a645ea12c500d4254",
-      "release_sha256": "196bc390fa47ef55ee1eee9dfaae9ba2b94f9b09ea36a03a645ea12c500d4254"
-    },
     "reports/references.bib": {
       "original_sha256": "60387f65adc4b8d2db961689c91ffcfb2fef52038cd922c376ae8642c4adafe7",
       "release_sha256": "60387f65adc4b8d2db961689c91ffcfb2fef52038cd922c376ae8642c4adafe7"
@@ -104,6 +96,16 @@
       "original_sha256": "ad4e777ae067ce2bf8be8023304ac1020e9ee54d29b172923e3adbb65eeae2a7",
       "release_sha256": "e30b88ed3403b4cde80d0804789da909e79359f021bdd5b7569220f9f8b8a108",
       "change": "Add pinned Lark1.2.2 for grammar validation; original scoring/statistics pins unchanged"
+    },
+    "reports/main.tex": {
+      "original_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3",
+      "release_sha256": "5a7bcb1951a66d9eeec044a4d2f39339d00cad3ded8d3d2909deec9b47bbba52",
+      "change": "v0.1.1: Chao Ma author and public reproducibility information; scientific results unchanged"
+    },
+    "reports/main.pdf": {
+      "original_sha256": "196bc390fa47ef55ee1eee9dfaae9ba2b94f9b09ea36a03a645ea12c500d4254",
+      "release_sha256": "7746d1bf110d7e5233fa10f420d749b25737b59cb7f72b46e18c9885912c4249",
+      "change": "v0.1.1: Chao Ma author and public reproducibility information; scientific results unchanged"
     }
   }
 }

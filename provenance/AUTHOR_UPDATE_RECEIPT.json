@@ -1,0 +1,13 @@
+{
+  "kind": "editorial_update",
+  "author": "Chao Ma",
+  "previous_source_sha256": "bad1092a207fc8e5c259931539a78ed6b70b35b401c1d29fd3a43741e9c4c5c3",
+  "new_source_sha256": "5a7bcb1951a66d9eeec044a4d2f39339d00cad3ded8d3d2909deec9b47bbba52",
+  "allowed_changes": [
+    "visible author",
+    "PDF metadata title/author",
+    "administrative release/reproducibility paragraph"
+  ],
+  "scientific_text_and_citation_passages_unchanged": true,
+  "original_audits": "Preserved for prior source hash; this receipt is deterministic editorial carry-forward, not a fresh semantic audit."
+}

@@ -1,6 +1,6 @@
 # Transcript Command Diagnostics
 
-[中文说明](README.zh-CN.md) · [Technical note (pre-release PDF)](reports/main.pdf) · [Dataset card](DATASET_CARD.md) · [v0.1.0 data and outputs](https://github.com/ickma2311/transcript-command-diagnostics/releases/tag/v0.1.0)
+[Technical note (PDF)](reports/main.pdf) · [Dataset card](DATASET_CARD.md) · [v0.1.0 data and outputs](https://github.com/ickma2311/transcript-command-diagnostics/releases/tag/v0.1.0)
 
 A small, reproducible diagnostic for extracting structured task states from **synthetic English commands** with missing sentence boundaries and a single filled pause (`uh`). It distinguishes a licensed alternative interpretation from an output outside every interpretation allowed by the command grammar.
 
@@ -90,7 +90,7 @@ Do not run `pivot/build.py` inside the checkout after fetching artifacts: its hi
 - Both parsers are independently implemented against the same authored contract. Their agreement is not independent human validation.
 - Phi has marked direction/family capability differences. Secondary tables retain those failures and do not replace the frozen primary endpoint.
 
-See the [technical note](reports/main.pdf), [English report](reports/REPORT_EN.md), [Chinese report](reports/REPORT_ZH.md), [protocol](docs/PROTOCOL.md) and [complete cell counts](reports/all_main_cells.csv).
+See the [technical note](reports/main.pdf), [English report](reports/REPORT_EN.md), [protocol](docs/PROTOCOL.md) and [complete cell counts](reports/all_main_cells.csv).
 
 ## Licenses and attribution
 
